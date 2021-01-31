@@ -37,6 +37,11 @@ class _HomeScreenState extends State<HomeScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        Image.asset(
+          'assets/logo.png',
+          width: 300,
+        ),
+        const SizedBox(height: 20),
         _menuButton("Empezar", () {}),
         const SizedBox(height: 20),
         _menuButton("Continuar", () {}),
@@ -58,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
             width: 200,
             padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Center(
               child: Text(text,
                   style: GoogleFonts.poppins(
